@@ -56,6 +56,7 @@ export const language: string = getSiteConfig('language', 'en')
 // social accounts
 export const twitter: string | null = getSiteConfig('twitter', null)
 export const mastodon: string | null = getSiteConfig('mastodon', null)
+export const misskey: string | null = getSiteConfig('misskey', null)
 export const github: string | null = getSiteConfig('github', null)
 export const youtube: string | null = getSiteConfig('youtube', null)
 export const linkedin: string | null = getSiteConfig('linkedin', null)
@@ -70,6 +71,17 @@ export const getMastodonHandle = (): string | null => {
   // Since Mastodon is decentralized, handles include the instance domain name.
   // e.g. @example@mastodon.social
   const url = new URL(mastodon)
+  return `${url.pathname.slice(1)}@${url.hostname}`
+}
+
+export const getMisskeyHandle = (): string | null => {
+  if (!misskey) {
+    return null
+  }
+
+  // Since Misskey is decentralized, handles include the instance domain name.
+  // e.g. @example@misskey.io
+  const url = new URL(misskey)
   return `${url.pathname.slice(1)}@${url.hostname}`
 }
 
