@@ -2,7 +2,7 @@ import React from 'react'
 
 import { domain, isDev, rootNotionPageId } from 'lib/config'
 import { resolveNotionPage } from 'lib/resolve-notion-page'
-import omit from 'lodash.omit'
+// import omit from 'lodash.omit'
 import { ExtendedRecordMap } from 'notion-types'
 import { normalizeTitle } from 'notion-utils'
 
