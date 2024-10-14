@@ -1,7 +1,9 @@
 import * as React from 'react'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
+import TypekitLoader from '@/lib/Typekit'
 
 import { IconContext } from '@react-icons/all-files'
+import TypekitLoader from '@/lib/Typekit'
 
 export default class MyDocument extends Document {
   render() {
@@ -18,6 +20,7 @@ export default class MyDocument extends Document {
             />
 
             <link rel='manifest' href='/manifest.json' />
+            <TypekitLoader />
           </Head>
 
           <body>
