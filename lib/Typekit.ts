@@ -4,7 +4,7 @@ const TypekitLoader: React.FC = () => {
   useEffect(() => {
     (function (d: Document) {
       const config = {
-        kitId: `${process.env.NEXT_PUBLIC_ADOBE_FONTS_KIT_ID}`,
+        kitId: 'csb3exr',
         scriptTimeout: 3000,
         async: true,
       };
