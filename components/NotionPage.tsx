@@ -10,7 +10,8 @@ import {
   formatDate,
   getBlockTitle,
   getPageProperty,
-  normalizeTitle
+  normalizeTitle,
+  parsePageId
 } from 'notion-utils'
 import BodyClassName from 'react-body-classname'
 import { NotionRenderer } from 'react-notion-x'
@@ -219,6 +220,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
   //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
+  const isBioPage =
+    parsePageId(block?.id) === parsePageId('11c63333382781e9a02cf16001ccb65e')    
 
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
