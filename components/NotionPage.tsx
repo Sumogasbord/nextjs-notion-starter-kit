@@ -233,6 +233,16 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const footer = React.useMemo(() => <Footer />, [])
 
+  const pageCover = React.useMemo(() => {
+    if (isBioPage) {
+      return (
+        <HeroHeader className='notion-page-cover-wrapper notion-page-cover-hero' />
+      )
+    } else {
+      return null
+    }
+  }, [isBioPage])
+
   if (router.isFallback) {
     return <Loading />
   }
@@ -241,7 +251,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
     return <Page404 site={site} pageId={pageId} error={error} />
   }
 
-  const title = getBlockTitle(block, recordMap) || site.name
+  const name = getBlockTitle(block, recordMap) || site.name
+  const title =
+    tagsPage && propertyToFilterName ? `${propertyToFilterName} ${name}` : name
 
   console.log('notion page', {
     isDev: config.isDev,
