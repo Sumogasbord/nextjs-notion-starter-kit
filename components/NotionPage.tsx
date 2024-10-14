@@ -10,8 +10,7 @@ import {
   formatDate,
   getBlockTitle,
   getPageProperty,
-  normalizeTitle,
-  parsePageId
+  normalizeTitle
 } from 'notion-utils'
 import BodyClassName from 'react-body-classname'
 import { NotionRenderer } from 'react-notion-x'
