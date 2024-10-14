@@ -235,16 +235,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const footer = React.useMemo(() => <Footer />, [])
 
-  const pageCover = React.useMemo(() => {
-    if (isBioPage) {
-      return (
-        <HeroHeader className='notion-page-cover-wrapper notion-page-cover-hero' />
-      )
-    } else {
-      return null
-    }
-  }, [isBioPage])
-
   if (router.isFallback) {
     return <Loading />
   }
