@@ -1,10 +1,11 @@
+"use client"
 import { useEffect } from 'react';
 
 const TypekitLoader: React.FC = () => {
   useEffect(() => {
     (function (d: Document) {
       const config = {
-        kitId: 'csb3exr',
+        kitId: `${process.env.NEXT_PUBLIC_ADOBE_FONTS_KIT_ID}`,
         scriptTimeout: 3000,
         async: true,
       };

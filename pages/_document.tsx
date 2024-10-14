@@ -2,7 +2,7 @@ import * as React from 'react'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 import { IconContext } from '@react-icons/all-files'
-import TypekitLoader from '@/lib/Typekit'
+import TypekitLoader from '@/lib/TypekitLoader'
 
 export default class MyDocument extends Document {
   render() {
