@@ -154,11 +154,6 @@ const propertySelectValue = (
   return defaultFn()
 }
 
-const HeroHeader = dynamic<{ className?: string }>(
-  () => import('./HeroHeader').then((m) => m.HeroHeader),
-  { ssr: false }
-)
-
 const propertyTextValue = (
   { schema, pageHeader },
   defaultFn: () => React.ReactNode
@@ -220,8 +215,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
   //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
-  const isBioPage =
-    parsePageId(block?.id) === parsePageId('11c63333382781e9a02cf16001ccb65e')    
 
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
