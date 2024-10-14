@@ -19,8 +19,8 @@
   line-height: 1.5;
   color: rgb(55, 53, 47);
   caret-color: rgb(55, 53, 47);
-  font-family: -apple-system, BlinkMacSystemFont, system-ui,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'salis-mvb', 'source-han-sans-cjk-ja', sans-serif;
+  font-family: 'salis-mvb', 'source-han-sans-cjk-ja', -apple-system, BlinkMacSystemFont, system-ui,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
   background-color: var(--bg-color);
 }
 

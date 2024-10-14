@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  --notion-font: ui-sans-serif, system-ui, 'salis-mvb', 'source-han-sans-cjk-ja', sans-serif;
+  --notion-font: 'salis-mvb', 'source-han-sans-cjk-ja', ui-sans-serif, system-ui, sans-serif;
   font-family: var(--notion-font);
   overflow-x: hidden;
 }
