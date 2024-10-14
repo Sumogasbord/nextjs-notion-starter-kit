@@ -3060,13 +3060,15 @@ react-pdf@^5.7.1:
   resolved "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.1.tgz"
   integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
-react-fluid-animation@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-fluid-animation/-/react-fluid-animation-1.0.1.tgz#d2b4a7c516d7ed2263c96921e44b40c5249cd306"
-  integrity sha512-+6Ld/cPmpCqkBCcf8Ch0yAbSwB+qWCHem+SkAestxWbqFDyhdX5waIaNemREq1owD5h3iAxqQfA+7XDPFYyaVA==
+react-sizeme@^2.5.2:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/react-sizeme/-/react-sizeme-2.6.12.tgz#ed207be5476f4a85bf364e92042520499455453e"
+  integrity sha512-tL4sCgfmvapYRZ1FO2VmBmjPVzzqgHA7kI8lSJ6JS6L78jXFNRdOZFpXyK6P1NBZvKPPCZxReNgzZNUajAerZw==
   dependencies:
-    raf "^3.4.1"
-    react-sizeme "^2.5.2"
+    element-resize-detector "^1.2.1"
+    invariant "^2.2.4"
+    shallowequal "^1.1.0"
+    throttle-debounce "^2.1.0"
 
 react-tweet-embed@^2.0.0:
   version "2.0.0"
