@@ -12,6 +12,7 @@ export default siteConfig({
   name: 'RooLone Magazine',
   domain: 'magazine.roolone.me',
   author: 'Sumögåsbord',
+  copyright_year: 'MMXXIV',
 
   // open graph metadata (optional)
   description: 'This is a test.',
