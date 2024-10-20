@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  --notion-font: 'mozaic-geo-variable', 'mozaic-italic-variable', 'source-han-sans-cjk-ja', ui-sans-serif, system-ui, sans-serif;
+  --notion-font: 'mozaic-geo-variable', 'mozaic-hum-variable', 'mozaic-italic-variable', 'source-han-sans-cjk-ja', ui-sans-serif, system-ui, sans-serif;
   font-family: var(--notion-font);
   overflow-x: hidden;
 }
