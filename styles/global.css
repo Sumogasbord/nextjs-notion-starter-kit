@@ -1,5 +1,11 @@
 * {
+  --font-variation: "wght" 350;
+  --font-variation-b: "wght" 375;
   box-sizing: border-box;
+}
+
+b {
+  font-variation-settings: var(--font-variation-b);
 }
 
 a {
@@ -7,15 +13,11 @@ a {
   text-decoration: none;
 }
 
-b {
-  font-variation-settings: "wght" 425;
-}
-
 body,
 html {
   padding: 0;
   margin: 0;
-  font-variation-settings: "wght" 375;
+  font-variation-settings: var(--font-variation);
 }
 
 body {
