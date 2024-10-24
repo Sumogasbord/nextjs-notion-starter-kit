@@ -8,14 +8,14 @@ a {
 }
 
 b {
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" 425;
 }
 
 body,
 html {
   padding: 0;
   margin: 0;
-  font-variation-settings: "wght" 200;
+  font-variation-settings: "wght" 375;
 }
 
 body {
