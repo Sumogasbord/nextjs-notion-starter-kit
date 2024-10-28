@@ -11,11 +11,11 @@ export default siteConfig({
   // basic site info (required)
   name: 'RooLone Magazine',
   domain: 'magazine.roolone.me',
-  author: 'Sumögåsbord',
+  author: 'Plainbox',
   copyright_year: 'MMXXIV',
 
   // open graph metadata (optional)
-  description: 'This is a test.',
+  description: 'ようこそ「さまよう旅人」のためのウェブサイトへ！RooLone Magazineは「さまよう旅人」へ向けたウェブマガジン。旅の参考に1mmぐらいはなるような情報をローペースで発信する予定です。',
 
   // social usernames (optional)
   // twitter: '#',
