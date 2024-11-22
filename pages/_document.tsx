@@ -2,12 +2,13 @@ import * as React from 'react'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 import { IconContext } from '@react-icons/all-files'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export default class MyDocument extends Document {
   render() {
     return (
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
-        <Html lang='en'>
+        <Html lang='ja'>
           <Head>
             <link rel='shortcut icon' href='/favicon.ico' />
             <link
@@ -18,6 +19,8 @@ export default class MyDocument extends Document {
             />
 
             <link rel='manifest' href='/manifest.json' />
+
+            <GoogleTagManager gtmId="GTM-K8WCSD6Q" />
             
             <script
               dangerouslySetInnerHTML={{
