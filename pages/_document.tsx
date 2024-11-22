@@ -2,7 +2,7 @@ import * as React from 'react'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 import { IconContext } from '@react-icons/all-files'
-import { GoogleTagManager } from '@next/third-parties/google'
+import { Analytics } from "@vercel/analytics/react"
 
 export default class MyDocument extends Document {
   render() {
@@ -19,9 +19,7 @@ export default class MyDocument extends Document {
             />
 
             <link rel='manifest' href='/manifest.json' />
-
-            <GoogleTagManager gtmId="GTM-K8WCSD6Q" />
-            
+                        
             <script
               dangerouslySetInnerHTML={{
                 __html: `
@@ -81,6 +79,7 @@ export default class MyDocument extends Document {
             <Main />
 
             <NextScript />
+            <Analytics />
           </body>
         </Html>
       </IconContext.Provider>
