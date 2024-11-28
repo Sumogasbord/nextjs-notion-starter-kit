@@ -10,7 +10,7 @@ import {
   formatDate,
   getBlockTitle,
   getPageProperty,
-//   normalizeTitle
+  normalizeTitle
 } from 'notion-utils'
 import BodyClassName from 'react-body-classname'
 import { NotionRenderer } from 'react-notion-x'
@@ -136,41 +136,41 @@ const propertyDateValue = (
   return defaultFn()
 }
 
-// const propertySelectValue = (
-//   { schema, value, key, pageHeader },
-//   defaultFn: () => React.ReactNode
-// ) => {
-//   value = normalizeTitle(value)
+const propertySelectValue = (
+  { schema, value, key, pageHeader },
+  defaultFn: () => React.ReactNode
+) => {
+  value = normalizeTitle(value)
 
-  // if (pageHeader && schema.type === 'multi_select' && value) {
-  //   return (
-      // <Link href={`/tags/${value}`} key={key}>
-      //   <a>{defaultFn()}</a>
-      // </Link>
-  //   )
-  // }
+  if (pageHeader && schema.type === 'multi_select' && value) {
+    return (
+      <Link href={`/tags/${value}`} key={key}>
+        <a>{defaultFn()}</a>
+      </Link>
+    )
+  }
 
-//   return defaultFn()
-// }
+  return defaultFn()
+}
 
-// const propertyTextValue = (
-//   { schema, pageHeader },
-//   defaultFn: () => React.ReactNode
-// ) => {
-//   if (pageHeader && schema?.name?.toLowerCase() === 'author') {
-//     return <b>{defaultFn()}</b>
-//   }
-// 
-//   return defaultFn()
-// }
+const propertyTextValue = (
+  { schema, pageHeader },
+  defaultFn: () => React.ReactNode
+) => {
+  if (pageHeader && schema?.name?.toLowerCase() === 'author') {
+    return <b>{defaultFn()}</b>
+  }
+
+  return defaultFn()
+}
 
 export const NotionPage: React.FC<types.PageProps> = ({
   site,
   recordMap,
   error,
   pageId,
-  // tagsPage,
-  // propertyToFilterName
+  tagsPage,
+  propertyToFilterName
 }) => {
   const router = useRouter()
   const lite = useSearchParam('lite')
@@ -187,9 +187,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
       Tweet,
       Header: NotionPageHeader,
       propertyLastEditedTimeValue,
-//       propertyTextValue,
+      propertyTextValue,
       propertyDateValue,
-//       propertySelectValue
+      propertySelectValue
     }),
     []
   )
@@ -235,10 +235,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
     return <Page404 site={site} pageId={pageId} error={error} />
   }
 
-  const title = getBlockTitle(block, recordMap) || site.name
-  // const name = getBlockTitle(block, recordMap) || site.name
-  // const title =
-  //   tagsPage && propertyToFilterName ? `${propertyToFilterName} ${name}` : name
+  const name = getBlockTitle(block, recordMap) || site.name
+  const title =
+    tagsPage && propertyToFilterName ? `${propertyToFilterName} ${name}` : name
 
   console.log('notion page', {
     isDev: config.isDev,
@@ -288,7 +287,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         bodyClassName={cs(
           styles.notion,
           pageId === site.rootNotionPageId && 'index-page',
-          // tagsPage && 'tags-page'
+          tagsPage && 'tags-page'
         )}
         darkMode={isDarkMode}
         components={components}
@@ -309,7 +308,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
         footer={footer}
-        //pageTitle={tagsPage && propertyToFilterName ? title : undefined}
+        pageTitle={tagsPage && propertyToFilterName ? title : undefined}
       />
 
     </>
