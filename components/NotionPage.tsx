@@ -10,7 +10,7 @@ import {
   formatDate,
   getBlockTitle,
   getPageProperty,
-  normalizeTitle
+//   normalizeTitle
 } from 'notion-utils'
 import BodyClassName from 'react-body-classname'
 import { NotionRenderer } from 'react-notion-x'
@@ -136,11 +136,11 @@ const propertyDateValue = (
   return defaultFn()
 }
 
-const propertySelectValue = (
-  { schema, value, key, pageHeader },
-  defaultFn: () => React.ReactNode
-) => {
-  value = normalizeTitle(value)
+// const propertySelectValue = (
+//   { schema, value, key, pageHeader },
+//   defaultFn: () => React.ReactNode
+// ) => {
+//   value = normalizeTitle(value)
 
   // if (pageHeader && schema.type === 'multi_select' && value) {
   //   return (
@@ -150,19 +150,19 @@ const propertySelectValue = (
   //   )
   // }
 
-  return defaultFn()
-}
+//   return defaultFn()
+// }
 
-const propertyTextValue = (
-  { schema, pageHeader },
-  defaultFn: () => React.ReactNode
-) => {
-  if (pageHeader && schema?.name?.toLowerCase() === 'author') {
-    return <b>{defaultFn()}</b>
-  }
-
-  return defaultFn()
-}
+// const propertyTextValue = (
+//   { schema, pageHeader },
+//   defaultFn: () => React.ReactNode
+// ) => {
+//   if (pageHeader && schema?.name?.toLowerCase() === 'author') {
+//     return <b>{defaultFn()}</b>
+//   }
+// 
+//   return defaultFn()
+// }
 
 export const NotionPage: React.FC<types.PageProps> = ({
   site,
@@ -187,9 +187,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
       Tweet,
       Header: NotionPageHeader,
       propertyLastEditedTimeValue,
-      propertyTextValue,
+//       propertyTextValue,
       propertyDateValue,
-      propertySelectValue
+//       propertySelectValue
     }),
     []
   )
