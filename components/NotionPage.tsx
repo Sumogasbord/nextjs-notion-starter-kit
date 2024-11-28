@@ -142,13 +142,13 @@ const propertySelectValue = (
 ) => {
   value = normalizeTitle(value)
 
-  if (pageHeader && schema.type === 'multi_select' && value) {
-    return (
-      <Link href={`/tags/${value}`} key={key}>
-        <a>{defaultFn()}</a>
-      </Link>
-    )
-  }
+  // if (pageHeader && schema.type === 'multi_select' && value) {
+  //   return (
+      // <Link href={`/tags/${value}`} key={key}>
+      //   <a>{defaultFn()}</a>
+      // </Link>
+  //   )
+  // }
 
   return defaultFn()
 }
@@ -169,8 +169,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
   recordMap,
   error,
   pageId,
-  tagsPage,
-  propertyToFilterName
+  // tagsPage,
+  // propertyToFilterName
 }) => {
   const router = useRouter()
   const lite = useSearchParam('lite')
@@ -235,9 +235,10 @@ export const NotionPage: React.FC<types.PageProps> = ({
     return <Page404 site={site} pageId={pageId} error={error} />
   }
 
-  const name = getBlockTitle(block, recordMap) || site.name
-  const title =
-    tagsPage && propertyToFilterName ? `${propertyToFilterName} ${name}` : name
+  const title = getBlockTitle(block, recordMap) || site.name
+  // const name = getBlockTitle(block, recordMap) || site.name
+  // const title =
+  //   tagsPage && propertyToFilterName ? `${propertyToFilterName} ${name}` : name
 
   console.log('notion page', {
     isDev: config.isDev,
@@ -287,7 +288,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         bodyClassName={cs(
           styles.notion,
           pageId === site.rootNotionPageId && 'index-page',
-          tagsPage && 'tags-page'
+          // tagsPage && 'tags-page'
         )}
         darkMode={isDarkMode}
         components={components}
@@ -308,7 +309,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
         footer={footer}
-        pageTitle={tagsPage && propertyToFilterName ? title : undefined}
+        //pageTitle={tagsPage && propertyToFilterName ? title : undefined}
       />
 
     </>
