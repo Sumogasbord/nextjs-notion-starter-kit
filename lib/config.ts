@@ -74,6 +74,17 @@ export const getMastodonHandle = (): string | null => {
   return `${url.pathname.slice(1)}@${url.hostname}`
 }
 
+export const getMisskeyHandle = (): string | null => {
+  if (!misskey) {
+    return null
+  }
+
+  // Since Misskey is decentralized, handles include the instance domain name.
+  // e.g. @example@misskey.io
+  const url = new URL(misskey)
+  return `${url.pathname.slice(1)}@${url.hostname}`
+}
+
 // default notion values for site-wide consistency (optional; may be overridden on a per-page basis)
 export const defaultPageIcon: string | null = getSiteConfig(
   'defaultPageIcon',
