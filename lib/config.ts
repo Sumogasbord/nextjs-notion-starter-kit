@@ -5,15 +5,15 @@
  * for optional depenencies.
  */
 import { parsePageId } from 'notion-utils'
-import { PostHogConfig } from 'posthog-js'
+import { type PostHogConfig } from 'posthog-js'
 
 import { getEnv, getSiteConfig } from './get-config-value'
-import { NavigationLink } from './site-config'
+import { type NavigationLink } from './site-config'
 import {
-  NavigationStyle,
-  PageUrlOverridesInverseMap,
-  PageUrlOverridesMap,
-  Site
+  type NavigationStyle,
+  type PageUrlOverridesInverseMap,
+  type PageUrlOverridesMap,
+  type Site
 } from './types'
 
 export const rootNotionPageId: string = parsePageId(
@@ -49,7 +49,6 @@ export const isDev = environment === 'development'
 // general site config
 export const name: string = getSiteConfig('name')
 export const author: string = getSiteConfig('author')
-export const copyright_year: string = getSiteConfig('copyright_year')
 export const domain: string = getSiteConfig('domain')
 export const description: string = getSiteConfig('description', 'Notion Blog')
 export const language: string = getSiteConfig('language', 'en')
@@ -74,18 +73,6 @@ export const getMastodonHandle = (): string | null => {
   const url = new URL(mastodon)
   return `${url.pathname.slice(1)}@${url.hostname}`
 }
-
-export const getMisskeyHandle = (): string | null => {
-  if (!misskey) {
-    return null
-  }
-
-  // Since Misskey is decentralized, handles include the instance domain name.
-  // e.g. @example@misskey.io
-  const url = new URL(misskey)
-  return `${url.pathname.slice(1)}@${url.hostname}`
-}
-
 
 // default notion values for site-wide consistency (optional; may be overridden on a per-page basis)
 export const defaultPageIcon: string | null = getSiteConfig(

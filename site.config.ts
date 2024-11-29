@@ -12,17 +12,16 @@ export default siteConfig({
   name: 'RooLone Magazine',
   domain: 'magazine.roolone.me',
   author: 'Plainbox',
-  copyright_year: 'MMXXIV',
 
   // open graph metadata (optional)
   description: 'ようこそ「さまよう旅人」のためのウェブサイトへ！RooLone Magazineは「さまよう旅人」へ向けたウェブマガジン。旅の参考に1mmぐらいはなるような情報をローペースで発信する予定です。',
 
   // social usernames (optional)
-  // twitter: '#',
+  //twitter: '#',
   github: 'sumogasbord',
-  // linkedin: '@',
+  //linkedin: '#',
   mastodon: 'https://vandrare.page/@sumogasbord', // optional mastodon profile URL, provides link verification
-  misskey: 'https://misskey.roolone.me/@sumogasbord',
+  misskey: 'https://misskey.roolone.me/@sumogasbord', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
@@ -58,6 +57,10 @@ export default siteConfig({
     {
       title: 'About',
       pageId: '11c63333382781e9a02cf16001ccb65e'
-    }
+    },
+  //   {
+  //     title: 'Contact',
+  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+  //   }
   ]
 })
