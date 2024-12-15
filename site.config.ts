@@ -16,10 +16,12 @@ export default siteConfig({
   // open graph metadata (optional)
   description: 'ようこそ「さまよう旅人」のためのウェブサイトへ！RooLone Magazineは「さまよう旅人」へ向けたウェブマガジン。旅の参考に1mmぐらいはなるような情報をローペースで発信する予定です。',
 
+  // website
+
   // social usernames (optional)
-  //twitter: '#',
+  // twitter: '#',
   github: 'sumogasbord',
-  //linkedin: '#',
+  // linkedin: '#',
   mastodon: 'https://vandrare.page/@sumogasbord', // optional mastodon profile URL, provides link verification
   misskey: 'https://misskey.roolone.me/@sumogasbord', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
