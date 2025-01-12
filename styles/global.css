@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  --notion-font: 'mozaic-hum-variable', 'mozaic-italic-variable', 'hiragino-kaku-gothic-pron', 'source-han-sans-vf', ui-sans-serif, system-ui, sans-serif;
+  --notion-font: 'mozaic-geo-variable', 'mozaic-italic-variable', 'hiragino-kaku-gothic-pron', 'source-han-sans-vf', ui-sans-serif, system-ui, sans-serif;
   font-family: var(--notion-font);
   overflow-x: hidden;
 }
