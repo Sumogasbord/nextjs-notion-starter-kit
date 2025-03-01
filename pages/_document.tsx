@@ -1,12 +1,14 @@
 import { IconContext } from '@react-icons/all-files'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { Analytics } from "@vercel/analytics/next"
+import { GoogleTagManager } from '@next/third-parties/google';
 
 export default class MyDocument extends Document {
   render() {
     return (
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
-        <Html lang='en'>
+        <Html lang='ja'>
+        <GoogleTagManager gtmId="G-B4GMQ1DGL7" />
           <Head>
             <link rel='shortcut icon' href='/favicon.ico' />
             <link
