@@ -9,7 +9,6 @@ export default class MyDocument extends Document {
     return (
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='ja'>
-        <GoogleTagManager gtmId="GTM-KSMNLTD3" />
           <Head>
             <link rel='shortcut icon' href='/favicon.ico' />
             <link
@@ -83,6 +82,7 @@ export default class MyDocument extends Document {
             <NextScript />
           </body>
           <GoogleAnalytics gaId="G-B4GMQ1DGL7" />
+          <GoogleTagManager gtmId="GTM-KSMNLTD3" />
         </Html>
       </IconContext.Provider>
     )

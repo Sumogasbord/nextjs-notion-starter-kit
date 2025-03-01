@@ -32,6 +32,8 @@ if (!isServer) {
   bootstrap()
 }
 
+export default App;
+
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
@@ -59,7 +61,7 @@ export default function App({ Component, pageProps }: AppProps) {
     return () => {
       router.events.off('routeChangeComplete', onRouteChangeComplete)
     }
-  }, [router.events])
+  }, [router.events])  
 
   return <Component {...pageProps} />
 }
