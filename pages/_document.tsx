@@ -18,7 +18,6 @@ export default class MyDocument extends Document {
               href='favicon.png'
             />
 
-            <!-- Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4GMQ1DGL7"></script>
             <script>
               window.dataLayer = window.dataLayer || [];
