@@ -2,6 +2,7 @@ import { IconContext } from '@react-icons/all-files'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { Analytics } from "@vercel/analytics/next"
 import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default class MyDocument extends Document {
   render() {
@@ -17,15 +18,6 @@ export default class MyDocument extends Document {
               sizes='32x32'
               href='favicon.png'
             />
-
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4GMQ1DGL7"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-B4GMQ1DGL7');
-            </script>
 
             <script
               dangerouslySetInnerHTML={{
@@ -90,6 +82,7 @@ export default class MyDocument extends Document {
 
             <NextScript />
           </body>
+          <GoogleAnalytics gaId="G-B4GMQ1DGL7" />
         </Html>
       </IconContext.Provider>
     )
