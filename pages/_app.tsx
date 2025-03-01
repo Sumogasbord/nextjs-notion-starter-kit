@@ -32,8 +32,6 @@ if (!isServer) {
   bootstrap()
 }
 
-export default App;
-
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
