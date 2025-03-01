@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
     return (
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='ja'>
-        <GoogleTagManager gtmId="G-B4GMQ1DGL7" />
+        <GoogleTagManager gtmId="GTM-KSMNLTD3" />
           <Head>
             <link rel='shortcut icon' href='/favicon.ico' />
             <link
