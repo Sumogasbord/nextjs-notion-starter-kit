@@ -1,6 +1,7 @@
 import { IconContext } from '@react-icons/all-files'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { GoogleTagManager } from '@next/third-parties/google';
 import { GoogleAnalytics } from '@next/third-parties/google'
 
@@ -76,10 +77,11 @@ export default class MyDocument extends Document {
 `
               }}
             />
-            <Analytics/>
             <Main />
 
             <NextScript />
+            <Analytics/>
+            <SpeedInsights />
           </body>
           <GoogleAnalytics gaId="G-B4GMQ1DGL7" />
           <GoogleTagManager gtmId="GTM-KSMNLTD3" />
