@@ -5,6 +5,7 @@ import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
+import { SiMisskey } from "react-icons/si"
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import * as React from 'react'
@@ -74,6 +75,17 @@ export function FooterImpl() {
             rel='me'
           >
             <FaMastodon />
+          </a>
+        )}
+
+        {config.misskey && (
+          <a
+            className={styles.misskey}
+            href={config.misskey}
+            title={`Misskey ${config.getMisskeyHandle()}`}
+            rel='me'
+          >
+            <SiMisskey />
           </a>
         )}
 
