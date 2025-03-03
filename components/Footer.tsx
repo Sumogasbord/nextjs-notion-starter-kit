@@ -2,6 +2,7 @@ import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
+import { SiMisskey } from "react-icons/si"
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
@@ -74,6 +75,17 @@ export function FooterImpl() {
             rel='me'
           >
             <FaMastodon />
+          </a>
+        )}
+
+        {config.misskey && (
+          <a
+            className={styles.misskey}
+            href={config.misskey}
+            title={`Misskey ${config.getMisskeyHandle()}`}
+            rel='me'
+          >
+            <SiMisskey />
           </a>
         )}
 
