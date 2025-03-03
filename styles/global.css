@@ -14,9 +14,7 @@ html {
 }
 
 body {
-  --notion-font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', 'Noto Sans', sans-serif;
+  --notion-font: 'neulis-sans', 'tot-shizukardgo-stdn', 'source-han-sans-vf', ui-sans-serif, system-ui, sans-serif;
   font-family: var(--notion-font);
   overflow-x: hidden;
 }
