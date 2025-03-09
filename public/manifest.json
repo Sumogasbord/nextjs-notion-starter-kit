@@ -1,6 +1,6 @@
 {
-  "name": "Next.js Notion Starter Kit",
-  "short_name": "Starter Kit",
+  "name": "RooLone Magazine",
+  "short_name": "RooLone Magazine",
   "icons": [
     {
       "src": "/favicon.png",
@@ -19,6 +19,6 @@
     }
   ],
   "theme_color": "#000000",
-  "background_color": "#000000",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
