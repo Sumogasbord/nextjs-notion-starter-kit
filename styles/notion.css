@@ -27,7 +27,7 @@
 
 .notion-text {
   padding: 0.5em 2px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.05em;
 }
 
 .notion-asset-caption {
@@ -35,8 +35,17 @@
 }
 
 .notion-asset-wrapper {
+  border-radius: 16px;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.notion-asset-wrapper img {
+  border-radius: 16px;
+}
+
+.medium-zoom-image--opened {
+  border-radius: 9px;
 }
 
 .notion-asset-wrapper-video > div,
@@ -197,7 +206,7 @@
 .notion-page-cover-wrapper span,
 .notion-page-cover-wrapper img {
   max-width: 1200px !important;
-  border-radius: 24px;
+  border-radius: 16px;
 }
 
 .notion-page-cover-wrapper {
