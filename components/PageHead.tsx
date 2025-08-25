@@ -3,7 +3,6 @@ import Head from 'next/head'
 import type * as types from '@/lib/types'
 import * as config from '@/lib/config'
 import { getSocialImageUrl } from '@/lib/get-social-image-url'
-
 export function PageHead({
   site,
   title,
@@ -18,6 +17,8 @@ export function PageHead({
   url?: string
 }) {
   const rssFeedUrl = `${config.host}/feed`
+
+  const UA_CODE = "G-B4GMQ1DGL7"
 
   title = title ?? site?.name
   description = description ?? site?.description
@@ -51,6 +52,9 @@ export function PageHead({
 
       <meta name='robots' content='index,follow' />
       <meta property='og:type' content='website' />
+      
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${UA_CODE}`} />
+      <script dangerouslySetInnerHTML={{ __html: ` window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${UA_CODE}', { page_path: window.location.pathname, }); `, }} />
 
       {site && (
         <>
@@ -99,6 +103,7 @@ export function PageHead({
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
+      
     </Head>
   )
 }
