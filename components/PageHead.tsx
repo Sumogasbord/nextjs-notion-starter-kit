@@ -17,11 +17,10 @@ export function PageHead({
   url?: string
 }) {
   const rssFeedUrl = `${config.host}/feed`
-
-  const UA_CODE = "G-B4GMQ1DGL7"
-
   title = title ?? site?.name
   description = description ?? site?.description
+
+  const UA_CODE = "G-B4GMQ1DGL7"
 
   const socialImageUrl = getSocialImageUrl(pageId) || image
 
