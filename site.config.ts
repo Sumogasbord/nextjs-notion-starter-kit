@@ -43,11 +43,12 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  // pageUrlOverrides: {
-  //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
-  //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
-  // }
-  pageUrlOverrides: null,
+  pageUrlOverrides: {
+       '/about': '26f63333382780cd8376edada6e9d380',
+       '/all-posts': '26f633333827807eb29ee450952968ed',
+       '/privacypolicy': '26f63333382780199a31ff80bc68fa2d',
+    },
+  // pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
@@ -56,7 +57,11 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'About',
-      pageId: '1b8633333827804ab253ddae090add67'
+      pageId: '26f63333382780cd8376edada6e9d380'
+    },
+    {
+      title: 'All-Post',
+      pageId: '26f633333827807eb29ee450952968ed'
     },
   //   {
   //     title: 'Contact',
