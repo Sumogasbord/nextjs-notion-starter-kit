@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  --notion-font: 'neulis-sans', 'tot-shizukago-stdn', ui-sans-serif, system-ui, sans-serif;
+  --notion-font: 'neulis-sans', 'hiragino-kaku-gothic-pron', ui-sans-serif, system-ui, sans-serif;
   font-family: var(--notion-font);
   overflow-x: hidden;
 }
