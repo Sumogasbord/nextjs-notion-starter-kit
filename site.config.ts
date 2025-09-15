@@ -60,7 +60,7 @@ export default siteConfig({
       pageId: '26f63333382780cd8376edada6e9d380'
     },
     {
-      title: 'All-Post',
+      title: 'All Posts',
       pageId: '26f633333827807eb29ee450952968ed'
     },
   //   {
