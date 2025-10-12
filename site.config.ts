@@ -23,7 +23,7 @@ export default siteConfig({
   github: 'sumogasbord',
   // linkedin: '#',
   mastodon: 'https://vandrare.page/@sumogasbord', // optional mastodon profile URL, provides link verification
-  // misskey: 'https://misskey.roolone.me/@sumogasbord', // optional mastodon profile URL, provides link verification
+  misskey: 'https://misskey.roolone.me/@sumogasbord', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
