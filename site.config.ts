@@ -45,7 +45,7 @@ export default siteConfig({
   // example:
   //
   pageUrlOverrides: {
-     '/member_sumogasbord': '28963333382780a9b51fccd5a074040d'
+     '/member_sumogasbord': '28963333382780a9b51fccd5a074040d',
   },
   // pageUrlOverrides: null,
 
