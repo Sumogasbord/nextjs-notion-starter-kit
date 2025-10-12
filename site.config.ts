@@ -19,11 +19,11 @@ export default siteConfig({
   // website
 
   // social usernames (optional)
-  // twitter: 'sumogasbord',
+  // twitter: '#',
   github: 'sumogasbord',
   // linkedin: '#',
   mastodon: 'https://vandrare.page/@sumogasbord', // optional mastodon profile URL, provides link verification
-  misskey: 'https://misskey.roolone.me/@sumogasbord', // optional mastodon profile URL, provides link verification
+  // misskey: 'https://misskey.roolone.me/@sumogasbord', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
@@ -45,11 +45,11 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  pageUrlOverrides: {
-     '/member_sumogasbord': '28963333382780a9b51fccd5a074040d',
-     '/about': '28963333382781f48f94e7cdf81243f9',
-  },
-  // pageUrlOverrides: null,
+  // pageUrlOverrides: {
+  //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
+  //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
+  // }
+  pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
