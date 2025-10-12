@@ -83,7 +83,7 @@ export function FooterImpl() {
           <a
             className={styles.misskey}
             href={config.misskey}
-            title={`Mastodon ${config.getMisskeyHandle()}`}
+            title={`Misskey ${config.getMisskeyHandle()}`}
             rel='me'
           >
             <SiMisskey />

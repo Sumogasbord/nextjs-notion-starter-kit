@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
   override render() {
     return (
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
-        <Html lang='en'>
+        <Html lang='ja'>
           <Head>
             <link rel='shortcut icon' href='/favicon.ico' />
             <link
