@@ -78,7 +78,6 @@ export function FooterImpl() {
           </a>
         )}
 
-
         {config.misskey && (
           <a
             className={styles.misskey}
