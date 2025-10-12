@@ -15,15 +15,14 @@ export default siteConfig({
 
   // open graph metadata (optional)
   description: 'ようこそ「さまよう旅人」のためのウェブサイトへ！RooLone Magazineは「さまよう旅人」へ向けたウェブマガジン。旅の参考に1mmぐらいはなるような情報をローペースで発信する予定です。',
-
   // website
 
   // social usernames (optional)
-  // twitter: '#',
+  twitter: 'sumogasbord',
   github: 'sumogasbord',
   // linkedin: '#',
   mastodon: 'https://vandrare.page/@sumogasbord', // optional mastodon profile URL, provides link verification
-  // misskey: 'https://misskey.roolone.me/@sumogasbord', // optional mastodon profile URL, provides link verification
+  misskey: 'https://misskey.roolone.me/@sumogasbord', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
@@ -45,11 +44,10 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  // pageUrlOverrides: {
-  //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
-  //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
-  // }
-  pageUrlOverrides: null,
+  pageUrlOverrides: {
+     '/member_sumogasbord': '28963333382780a9b51fccd5a074040d'
+  },
+  // pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
@@ -58,7 +56,7 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'About',
-      pageId: '18d63333382781c6a3e1fbc2693837ee'
+      pageId: '28963333382781f48f94e7cdf81243f9'
     },
   //   {
   //     title: 'Contact',
