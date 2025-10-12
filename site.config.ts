@@ -18,7 +18,7 @@ export default siteConfig({
   // website
 
   // social usernames (optional)
-  twitter: 'sumogasbord',
+  // twitter: 'sumogasbord',
   github: 'sumogasbord',
   // linkedin: '#',
   mastodon: 'https://vandrare.page/@sumogasbord', // optional mastodon profile URL, provides link verification
