@@ -15,10 +15,11 @@ export default siteConfig({
 
   // open graph metadata (optional)
   description: 'ようこそ「さまよう旅人」のためのウェブサイトへ！RooLone Magazineは「さまよう旅人」へ向けたウェブマガジン。旅の参考に1mmぐらいはなるような情報をローペースで発信する予定です。',
+
   // website
 
   // social usernames (optional)
-  // twitter: 'sumogasbord',
+  // twitter: '#',
   github: 'sumogasbord',
   // linkedin: '#',
   mastodon: 'https://vandrare.page/@sumogasbord', // optional mastodon profile URL, provides link verification
@@ -46,6 +47,7 @@ export default siteConfig({
   //
   pageUrlOverrides: {
      '/member_sumogasbord': '28963333382780a9b51fccd5a074040d',
+     '/about': '28963333382781f48f94e7cdf81243f9',
   },
   // pageUrlOverrides: null,
 
